@@ -1,9 +1,37 @@
 .main__wrapper{
     display: flex;
     flex-direction: row;
-    background-color: #bdb76b;
+    background-color: #008327;
+    min-height: 70vh;
+}
+
+.aside{
+    border: 1px solid red;
+    padding: 10px;
+    width: 20%;
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 12px;
+}
+
+.ratetable{
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.ratetable__head{
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.ratetable th,
+.ratetable td {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.hero{
+    background-color: #00b938;
+    width: 80%;
 }

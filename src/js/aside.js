@@ -1,6 +1,7 @@
 
 import fetchCurrencyRate from "./fetch-rates";
-const rateTable = document.querySelector("table");
+
+const table = document.getElementById("table");
 
 async function setRateTable () {
     try {
@@ -24,7 +25,7 @@ function setMarkup (rates) {
                 ${ccy}
             </td>
             <td>
-                ${normalizedBuyValue}${base_ccy}
+                ${normalizedBuyValue} ${base_ccy}
             </td>
             <td>
                 ${normalizedSaleValue} ${base_ccy}
@@ -34,7 +35,8 @@ function setMarkup (rates) {
     .join("");
 
     console.log(ratesMarkupString);
-    rateTable.innerHTML = ratesMarkupString;
+    console.log(table);
+    table.innerHTML = ratesMarkupString;
 };
 
 setRateTable();
