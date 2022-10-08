@@ -5,7 +5,9 @@
   "homepage": "https://Akim3351.github.io/mycurrencyconverter",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /mycurrencyconverter/"
+    "build": "parcel build src/*.html --public-url /mycurrencyconverter/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
