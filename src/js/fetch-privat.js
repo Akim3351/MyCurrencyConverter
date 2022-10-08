@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-async function fetchCurrencyRate() {
+async function fetchRatePrivatBank() {
     const CURRENCY_URL = 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5';
   try {
     const fetchData = await axios(CURRENCY_URL)
@@ -17,10 +17,10 @@ async function fetchCurrencyRate() {
         return data;
       }));
     return fetchData;
-
+      console.log(fetchData);
   } catch (error) {
     console.error(error);
   }
 };
 
-export default fetchCurrencyRate;
+export default fetchRatePrivatBank;

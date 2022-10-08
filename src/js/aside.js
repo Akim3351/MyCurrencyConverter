@@ -1,26 +1,27 @@
 
-import fetchCurrencyRate from "./fetch-rates";
+import fetchRatePrivatBank from "./fetch-privat";
+import { v4 as uuidv4 } from 'uuid';
 
-const table = document.getElementById("table");
+const tablePrivat = document.getElementById("tableprivat");
 
-async function setRateTable () {
+async function setRateTable() {
     try {
-        const rates = await fetchCurrencyRate();
-        setMarkup(rates);
-        } catch(error) {
-            console.log(error);
-        }
+        const ratesPrivat = await fetchRatePrivatBank();
+        setPrivatMarkup(ratesPrivat);
+    } catch (error) {
+        console.log(error);
+    }
 };
 
-function setMarkup (rates) {
-    const ratesMarkupString = rates.map(item => {
+function setPrivatMarkup(ratesPrivat) {
+    const ratesPrivatString = ratesPrivat.map(item => {
         const {
             ccy,
             base_ccy,
             normalizedBuyValue,
             normalizedSaleValue
         } = item;
-        return `<tr>
+        return `<tr key=${uuidv4()}>
             <td>
                 ${ccy}
             </td>
@@ -32,11 +33,9 @@ function setMarkup (rates) {
             </td>
         </tr>`;
     })
-    .join("");
+        .join("");
 
-    console.log(ratesMarkupString);
-    console.log(table);
-    table.innerHTML = ratesMarkupString;
+    tablePrivat.innerHTML = ratesPrivatString;
 };
 
 setRateTable();
