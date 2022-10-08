@@ -1,13 +1,21 @@
 .main__wrapper{
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #c5ff95;
-    min-height: 70vh;
+
+    @media (min-width: 768px) {
+        min-height: 70vh;
+        flex-direction: row;
+    }
 }
 
 .aside{
     padding: 10px;
-    width: 25%;
+
+    @media (min-width: 768px) {
+        width: 25%;
+    }
 }
 
 .subtitle {
@@ -43,7 +51,10 @@
 .hero{
     padding: 15px;
     background-color: #e4e4e4;
-    width: 75%;
+
+    @media (min-width: 768px) {
+        width: 75%;
+    }
 }
 
 .form__input,
