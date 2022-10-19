@@ -43,10 +43,25 @@
     text-align: center;
 }
 
+.ratetable th:hover,
+.ratetable td:hover {
+    cursor:default;
+    transform: scale(1.2);
+    color: rgb(70, 124, 27);
+    background-color: #e4e4e4;
+}
+
 .aside__span{
     font-weight: 600;
     font-size: 10px;
     font-style: italic;
+}
+
+.aside__span:hover{
+    cursor:default;
+    transform: scale(1.4);
+    color: rgb(70, 124, 27);
+    background-color: #e4e4e4;
 }
 
 .hero{
@@ -68,15 +83,22 @@
 
 .form__input,
 .form__select {
+    padding: 0px 5px;
     outline: none;
-    height: 25px;
+    height: 35px;
     width: 250px;
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 1px solid #808080;
+    border-radius: 5px;
     background-color: rgba(235, 235, 235, 0.5);
     font-weight: 600;
+}
+
+.form__select:active,
+.form__select:hover{
+    cursor: pointer;
 }
 
 .form__span {

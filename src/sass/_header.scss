@@ -13,10 +13,21 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  height: 35px;
+  height: 50px;
+  width: max-content;
   font-size: 36px;
-  font-weight: 800;
+  font-weight: 500;
   font-style: italic;
   color: #e4e4e4;
-  text-decoration: underline 4px solid #e4e4e4;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+.title__iconwrapper{
+  width: 50px;
+}
+
+.title__icon{
+  height: 45px;
+  fill: #e4e4e4;
 }
