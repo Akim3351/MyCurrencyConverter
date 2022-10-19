@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 15px 30px;
   min-height: 15vh;
-  background-color: #bdb76b;
+  background:  rgba(70, 124, 27, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,5 +14,9 @@
   flex-direction: row;
   justify-content: flex-start;
   height: 35px;
-  text-decoration: underline 4px solid #000;
+  font-size: 36px;
+  font-weight: 800;
+  font-style: italic;
+  color: #e4e4e4;
+  text-decoration: underline 4px solid #e4e4e4;
 }
