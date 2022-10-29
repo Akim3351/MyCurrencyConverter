@@ -1,7 +1,9 @@
 .footer{
+    padding: 10px 30px;
     min-height: 15vh;
     background-color: rgba(70, 124, 27, 0.8);
     display: flex;
+    justify-content: space-between;
 }
 
 .footer__block {
