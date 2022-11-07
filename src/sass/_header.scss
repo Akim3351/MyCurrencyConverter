@@ -1,11 +1,15 @@
 .header {
   margin: 0px;
-  padding: 15px 30px;
+  padding: 10px 20px;
   min-height: 15vh;
   background:  rgba(70, 124, 27, 0.9);
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media(min-width: 768px) {
+    padding: 15px 30px;
+  }
 }
 
 .title {
@@ -13,18 +17,29 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  height: 50px;
+  height: 30px;
   width: max-content;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 500;
   font-style: italic;
   color: #e4e4e4;
   padding-bottom: 5px;
   border-bottom: 2px solid #e4e4e4;
+
+  @media(min-width: 768px) {
+    height: 50px;
+    font-size: 36px;
+    font-weight: 500;
+    }
 }
 
 .title__iconwrapper{
-  width: 50px;
+  width: 30px;
+
+  @media(min-width: 768px) {
+    width: 50px;
+  }
+
 }
 
 .title__icon{
